@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Seyfu Saliya Awsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <p>Learn more about my journey and expertise.</p>
+    </header>
+
+    <nav>
+        <style>
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100px; /* Adjust as needed */
+            }
+    
+            .logo {
+                /* Basic styling for the logo container */
+                width: 150px; /* Adjust as needed */
+                height: 150px; /* Adjust to match width for a circle or your desired ratio */
+                /* border: 2px solid #333; /* Optional border */ */
+                border-radius: 50%; /* Creates a circular shape if width and height are equal */
+                background-color: #222; /* Dark background for contrast */
+                color: #eee; /* Light text color */
+                font-family: monospace; /* Typical developer font */
+                font-size: 2.5em; /* Adjust text size */
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+                cursor: pointer; /* Indicate it might be interactive */
+                transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+            }
+    
+            .logo:hover {
+                transform: rotate(10deg) scale(1.05); /* Slight rotation and scale on hover */
+            }
+    
+            /* Alternative style using text initials */
+            .logo-text {
+                font-size: 3em;
+                font-weight: bold;
+                letter-spacing: -0.1em;
+            }
+    
+            /* Style for a more abstract, code-like logo */
+            .logo-code {
+                font-size: 2em;
+                line-height: 0.8;
+            }
+    
+            .logo-code span {
+                color: #00ff80; /* Highlight color */
+            }
+    
+            /* Style for a logo with a visual icon (requires including an icon library like Font Awesome) */
+            .logo-icon {
+                font-size: 3em;
+                color: #00bfff; /* Example icon color */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">DS</span> </div>
+    
+            </div>
+    
+        <script>
+            // Optional JavaScript for more dynamic effects
+    
+            const logoElement = document.querySelector('.logo');
+    
+            if (logoElement) {
+                logoElement.addEventListener('click', () => {
+                    alert('Welcome to seifu website🎉 Welcome aboard! Ready to explore, create, and conquer? Let’s make it amazing together! 🚀!'); // Example interaction
+                    logoElement.classList.toggle('active'); // Example toggle class
+                });
+    
+                // Example of a simple dynamic text change on hover (for text-based logos)
+                const logoTextSpan = logoElement.querySelector('.logo-text');
+                if (logoTextSpan) {
+                    const originalText = logoTextSpan.textContent;
+                    logoElement.addEventListener('mouseover', () => {
+                        logoTextSpan.textContent = 'Dev';
+                    });
+                    logoElement.addEventListener('mouseout', () => {
+                        logoTextSpan.textContent = originalText;
+                    });
+                }
+            }
+        </script>
+      <ul class="nav ul" id="navLinks">
+          <li><a href="index.html"  class="btn">Home</a></li>
+          <li><a href="portfolio.html" class="btn">Portfolio</a></li>
+          <li><a href="cv.html"class="btn">CV</a></li>
+          <li><a href="contact.html"class="btn">Contact</a></li>
+          <div class="contact-button">
+              <a href="contact.html" class="btn">Contact us →</a>
+          </div>
+      </ul>
+     
+      <div class="menu-toggle" id="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+
+    <section>
+        <h2>My Background</h2>
+        <p>I graduated from Unity University with a BA Degree in Computer Science, I specialize in Web Development and Mobile Application Development.</p>
+        <p>I hold a Bachelor’s Degree in Computer Science from the University of UNITY, where I focused on web development, software engineering principles, and user interface design. During my studies, I developed a strong foundation in programming languages like JavaScript and HTML/CSS, and worked on several web-based projects that gave me practical experience in front-end technologies. I am a Backend Developer too with a strong background in server-side technologies, including Node.js, and Python (Flask). I enjoy working in Agile teams, focusing on continuous improvement and high performance.</p>
+    </section>
+    <style>
+        .container {
+          display: flex;
+          align-items: center; /* Vertically center the content */
+        }
+        .container img {
+          width: 400px; /* You can adjust the width of the image */
+          margin-right: 20px; /* Space between the image and text */
+        }
+      </style>
+    </head>
+    <body>
+
+        <section class="skills-wrapper">
+          <div class="profile-section">
+              <div class="image-wrapper">
+                  <img src="image/IMG_8515.JPG" alt="Developer Image" class="profile-pic">
+                </div>
+
+                <div class="skills-section">
+                  <div class="skills-card">
+                      <h2>Front-End Developer:</h2>
+                      <ul>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" class="logoo"> HTML</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="logoo"> CSS</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="logoo"> JavaScript</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="React" class="logoo"> React</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/732/732136.png" alt="Bootstrap" class="logoo"> Bootstrap</li>
+                      </ul>
+                  </div>
+          
+                  <div class="skills-card">
+                      <h2>Back-End Developer:</h2>
+                      <ul>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="logoo"> Java</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/732/732084.png" alt="Node.js" class="logoo"> Node.js</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Python" class="logoo"> Python</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="MySQL" class="logoo"> MySQL</li>
+                          <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MongoDB" class="logoo"> MongoDB</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</body>
+
+<section class="excellence-section">
+  <h1>Showcasing Excellence </h1>
+
+  <div class="features-container">
+      <div class="feature-item">
+          <div class="icon-box">
+              <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovative Problem-Solving</h3>
+          <p>Each project highlights my ability to deliver creative and effective solutions tailored to unique challenges.</p>
+      </div>
+
+      <div class="feature-item">
+          <div class="icon-box">
+              <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Cross-Industry Expertise</h3>
+          <p>My portfolio demonstrates proficiency in a range of industries, ensuring versatility and adaptability.</p>
+      </div>
+
+      <div class="feature-item">
+          <div class="icon-box">
+              <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Client-Centric Approach</h3>
+          <p>I prioritize understanding client needs to create impactful and meaningful project outcomes.</p>
+      </div>
+
+      <div class="feature-item">
+          <div class="icon-box">
+              <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Results-Driven Strategies</h3>
+          <p>My projects are designed to achieve measurable success, combining creativity with strategic planning.</p>
+      </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<section class="core-competencies">
+  <h1>Core Competencies</h1>
+  <p>A showcase of the skills and expertise that drive the success of our projects.</p>
+
+  <div class="competency-grid">
+      <div class="competency-card">
+        <i class="fas fa-project-diagram"></i> <!-- Example icon --></i>
+          <h3>Project Management</h3>
+          <p>Expertise in managing projects efficiently, ensuring timely delivery and quality outcomes.</p>
+      </div>
+
+      <div class="competency-card">
+        <i class="fas fa-project-diagram"></i> <!-- Example icon --></i>
+          <h3>Creative Design</h3>
+          <p>Crafting visually stunning and impactful designs tailored to project objectives.</p>
+      </div>
+
+      <div class="competency-card">
+        <i class="fas fa-project-diagram"></i> <!-- Example icon --></i>
+          <h3>Technical Proficiency</h3>
+          <p>Leveraging the latest technologies to develop innovative and functional solutions.</p>
+      </div>
+
+      <div class="competency-card">
+        <i class="fas fa-project-diagram"></i> <!-- Example icon --></i>
+          <h3>Client Collaboration</h3>
+          <p>Building strong client relationships through clear communication and mutual understanding.</p>
+      </div>
+
+      <div class="competency-card">
+          <i class="fas fa-project-diagram"></i> <!-- Example icon -->></i>
+          <h3>Strategic Thinking</h3>
+          <p>Developing strategies that align with client goals and drive project success.</p>
+      </div>
+
+      <div class="competency-card">
+          <i class="fas fa-project-diagram"></i> <!-- Example icon -->></i>
+          <h3>Problem Solving</h3>
+          <p>Identifying challenges and implementing effective solutions to overcome them.</p>
+      </div>
+      <i class="fas fa-project-diagram"></i> <!-- Example icon -->
+
+  </div>
+</section>
+
+<script src="script.js" ></script>
+<section>
+<style>
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: rgb(66, 63, 63);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0b0250;
+    color: rgb(238, 231, 228);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    font-size: 16px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #2d0b0b;
+}
+
+tbody tr:hover {
+    background-color: hsl(16, 88%, 40%);
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.progress-fill {
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 10px;
+}
+
+.btn-togglee {
+    background-color: #3c100a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.btn-toggle:hover {
+    background-color: #081a2d;
+}
+.ppp{
+    color: #000;
+}
+</style>
+
+<div class="container">
+<p class="ppp">Here are the key skills that i have for Full Stack Mobile App and Web Development:</p>
+
+<button class="btn-togglee" onclick="toggleSkills()">Enter</button>
+
+<table id="skillsTable">
+    <thead>
+        <tr>
+            <th>Skill</th>
+            <th>Category</th>
+            <th>Proficiency Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML, CSS, JavaScript</td>
+            <td>Frontend Web Development</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>React, Redux</td>
+            <td>Frontend Frameworks</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Flutter, Android-studio</td>
+            <td>Mobile App Development</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Node.js, Express</td>
+            <td>Backend Web Development</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>MongoDB, SQL</td>
+            <td>Database Management</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Git, GitHub</td>
+            <td>Version Control</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>UI/UX Design</td>
+            <td>Design Skills</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<script>
+// JavaScript Function to Toggle Table Visibility
+function toggleSkills() {
+    const skillsTable = document.getElementById("skillsTable");
+    if (skillsTable.style.display === "none" || skillsTable.style.display === "") {
+        skillsTable.style.display = "table";
+    } else {
+        skillsTable.style.display = "none";
+    }
+}
+</script>
+</section>
+
+      <p>As a team player, I thrive in collaborative environments where communication and sharing knowledge are essential to success. I have worked with cross-functional teams, including designers, product managers, and backend developers, to bring projects from concept to completion. and I am an analytical problem-solver who enjoys tackling complex challenges. I believe in continuously improving my skills, And also I regularly participate in online courses, hackathons, and coding communities to stay up-to-date with the latest industry trends and technologies.</p>
+      <section class="portfolio-connect">
+        <h2>Connect with Seyfu Saliya</h2>
+        <p>Discover more about my projects and how i can collaborate to achieve your goals.</p>
+
+        <div class="button-container">
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <button class="btn free-btn"><i class="fas fa-folder"></i> Try For Free</button>
+<a href="mailto:seyfusaliya89@gmail.com" class="btn contact-btn"><i class="fas fa-envelope"></i> Contact me</button></a>
+        </div>
+
+        <p>Want to collaborate? <a href="contact.html">Reach out to us</a></p>
+    </section>
+      <footer>
+        <p>&copy; 2025 Seyfu Saliya Awsi</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="#privacy"  class="privacy-btn" id="privacyBtn">Privacy Policy</a>
+                 <!-- Modal -->
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2 class="hh"> Policy</h2>
+            <p class="p6"> value your privacy are committed to protecting your personal data. This policy outlines how we collect, use, and safeguard your information.</p>
+            <p class="p6"> using this website, you consent to the terms described in this Privacy Policy.</p>
+            <p class="p6"> any questions or concerns, please contact us at seyfusaliya89@gmail.com.</p>
+        </div>
+    </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const privacyBtn = document.getElementById('privacyBtn');
+                        const privacyModal = document.getElementById('privacyModal');
+                        const closeModal = document.getElementById('closeModal');
+            
+                        // Open modal when button is clicked
+                        privacyBtn.addEventListener('click', () => {
+                            privacyModal.style.display = 'flex';
+                        });
+            
+                        // Close modal when 'X' is clicked
+                        closeModal.addEventListener('click', () => {
+                            privacyModal.style.display = 'none';
+                        });
+            
+                        // Close modal when clicking outside modal content
+                        window.addEventListener('click', (event) => {
+                            if (event.target === privacyModal) {
+                                privacyModal.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
+</body>
+            </a>
+            <a href="#terms" id="termsButton">Terms of Service 
+ <div class="container00">
+                 <!-- Modal Structure -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="hq">Terms of Service</h2>
+            <p class="pq">Welcome to the Terms of Service page. By accessing or using this website, you agree to abide by these terms.</p>
+            <h3 class="hq">1. User Obligations</h3>
+            <p class="pq">You agree to use this website only for lawful purposes and to avoid infringing on the rights of others.</p>
+            <h3 class="hq">2. Copyright Notice</h3>
+            <p class="pq">All content, images, and text on this site are the intellectual property of the owner unless stated otherwise.</p>
+            <h3 class="hq">3. Disclaimer</h3>
+            <p class="pq">We do not guarantee that the information on the website is 100% accurate and reserve the right to modify these terms.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to control the modal behavior
+        const modal = document.getElementById("termsModal");
+        const btn = document.getElementById("termsButton");
+        const closeBtn = document.querySelector(".close");
+
+        // Open the modal when the button is clicked
+        btn.addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+
+        // Close the modal when the "X" is clicked
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Close the modal if the user clicks outside of the modal content
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+            </a>
+        </div>
+    </body>
+        
+        <div class="footer-icons">
+            <a href="https://x.com/saliyaseyfu?s=21&t=VTp_6-_RmzwJCp6NlmQg1Q"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/seyfu-saliya-b489a3239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Seyfu-Saliya"><i class="fab fa-github"></i></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

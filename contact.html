@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Seyfu Saliya Awsi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out to me!</p>
+    </header>
+
+    <nav>
+        <style>
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100px; /* Adjust as needed */
+            }
+    
+            .logo {
+                /* Basic styling for the logo container */
+                width: 150px; /* Adjust as needed */
+                height: 150px; /* Adjust to match width for a circle or your desired ratio */
+                /* border: 2px solid #333; /* Optional border */ */
+                border-radius: 50%; /* Creates a circular shape if width and height are equal */
+                background-color: #222; /* Dark background for contrast */
+                color: #eee; /* Light text color */
+                font-family: monospace; /* Typical developer font */
+                font-size: 2.5em; /* Adjust text size */
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+                cursor: pointer; /* Indicate it might be interactive */
+                transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+            }
+    
+            .logo:hover {
+                transform: rotate(10deg) scale(1.05); /* Slight rotation and scale on hover */
+            }
+    
+            /* Alternative style using text initials */
+            .logo-text {
+                font-size: 3em;
+                font-weight: bold;
+                letter-spacing: -0.1em;
+            }
+    
+            /* Style for a more abstract, code-like logo */
+            .logo-code {
+                font-size: 2em;
+                line-height: 0.8;
+            }
+    
+            .logo-code span {
+                color: #00ff80; /* Highlight color */
+            }
+    
+            /* Style for a logo with a visual icon (requires including an icon library like Font Awesome) */
+            .logo-icon {
+                font-size: 3em;
+                color: #00bfff; /* Example icon color */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">DS</span> </div>
+    
+            </div>
+    
+        <script>
+            // Optional JavaScript for more dynamic effects
+    
+            const logoElement = document.querySelector('.logo');
+    
+            if (logoElement) {
+                logoElement.addEventListener('click', () => {
+                    alert('Welcome to seifu website🎉 Welcome aboard! Ready to explore, create, and conquer? Let’s make it amazing together! 🚀!'); // Example interaction
+                    logoElement.classList.toggle('active'); // Example toggle class
+                });
+    
+                // Example of a simple dynamic text change on hover (for text-based logos)
+                const logoTextSpan = logoElement.querySelector('.logo-text');
+                if (logoTextSpan) {
+                    const originalText = logoTextSpan.textContent;
+                    logoElement.addEventListener('mouseover', () => {
+                        logoTextSpan.textContent = 'Dev';
+                    });
+                    logoElement.addEventListener('mouseout', () => {
+                        logoTextSpan.textContent = originalText;
+                    });
+                }
+            }
+        </script>
+        <ul class="nav ul" id="navLinks">
+            <li><a href="index.html"  class="btn">Home</a></li>
+            <li><a href="about.html" class="btn">About</a></li>
+            <li><a href="portfolio.html"class="btn">Portfolio</a></li>
+            <li><a href="cv.html"class="btn">CV</a></li>
+            <div class="contact-button">
+                <a href="contact.html" class="btn">Contact us →</a>
+            </div>
+        </ul>
+       
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section>
+        <h2>Get In Touch</h2>
+        <p>Email: <a href="seyfusaliya89@gmail.com">seyfusaliya89@gmail.com</a></p>
+    </section>
+    <P>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</P>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/seyfu-saliya-b489a3239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">https://www.linkedin.com/in/seyfu-saliya </a></p>
+        <p>Telegram: <a href="https://t.me/seifu_sr">https://t.me/seifu_sr</a></p>
+   
+   <p>Phone1: +251915809091 </p>
+   <p>Phone2: +251929747361 </p>
+   
+   <div class="footer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <a href="mailto:seyfusaliya89@gmail.com">
+        <i class="fas fa-envelope"></i>  <!-- Email icon -->
+    </a>
+    
+    <a href="tel:+251915809091">
+        <i class="fas fa-phone-alt"></i>  <!-- Phone icon -->
+    </a>
+    
+    <a href="https://t.me/seifu_sr">
+        <i class="fab fa-telegram-plane"></i>  <!-- Telegram icon -->
+    </a>
+</div>
+
+<style>
+    .footer {
+        display: flex;
+        justify-content: center; /* Centers the items horizontally */
+        gap: 15px; /* Reduced gap between the images */
+        padding: 20px;
+        align-items: center; /* Vertically centers the icons */
+        position: relative; /* Allows for positioning of items */
+    }
+
+    .footer a {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer img {
+        width: 60px; /* Increased the size of the images */
+        height: 60px; /* Increased the size of the images */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+        margin-bottom: 10px; /* Moves the icons slightly upward */
+    }
+
+    .footer img:hover {
+        transform: scale(1.1); /* Slightly enlarge images on hover */
+    }
+</style>
+
+    <footer>
+        <p>&copy; 2025 Seyfu Saliya Awsi</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Project</a>
+            <a href="#privacy"  class="privacy-btn" id="privacyBtn">Privacy Policy</a>
+            <!-- Modal -->
+<div class="modal" id="privacyModal">
+   <div class="modal-content">
+       <button class="close-btn" id="closeModal">&times;</button>
+       <h2 class="hh"> Policy</h2>
+       <p class="p6"> value your privacy are committed to protecting your personal data. This policy outlines how we collect, use, and safeguard your information.</p>
+       <p class="p6"> using this website, you consent to the terms described in this Privacy Policy.</p>
+       <p class="p6"> any questions or concerns, please contact us at seyfusaliya89@gmail.com.</p>
+   </div>
+</div>
+           <script>
+               document.addEventListener('DOMContentLoaded', function () {
+                   const privacyBtn = document.getElementById('privacyBtn');
+                   const privacyModal = document.getElementById('privacyModal');
+                   const closeModal = document.getElementById('closeModal');
+       
+                   // Open modal when button is clicked
+                   privacyBtn.addEventListener('click', () => {
+                       privacyModal.style.display = 'flex';
+                   });
+       
+                   // Close modal when 'X' is clicked
+                   closeModal.addEventListener('click', () => {
+                       privacyModal.style.display = 'none';
+                   });
+       
+                   // Close modal when clicking outside modal content
+                   window.addEventListener('click', (event) => {
+                       if (event.target === privacyModal) {
+                           privacyModal.style.display = 'none';
+                       }
+                   });
+               });
+           </script>
+</body>
+       </a>
+       <a href="#terms" id="termsButton">Terms of Service 
+<div class="container00">
+            <!-- Modal Structure -->
+<div id="termsModal" class="modal">
+   <div class="modal-content">
+       <span class="close">&times;</span>
+       <h2 class="hq">Terms of Service</h2>
+       <p class="pq">Welcome to the Terms of Service page. By accessing or using this website, you agree to abide by these terms.</p>
+       <h3 class="hq">1. User Obligations</h3>
+       <p class="pq">You agree to use this website only for lawful purposes and to avoid infringing on the rights of others.</p>
+       <h3 class="hq">2. Copyright Notice</h3>
+       <p class="pq">All content, images, and text on this site are the intellectual property of the owner unless stated otherwise.</p>
+       <h3 class="hq">3. Disclaimer</h3>
+       <p class="pq">We do not guarantee that the information on the website is 100% accurate and reserve the right to modify these terms.</p>
+   </div>
+</div>
+
+<script>
+   // JavaScript to control the modal behavior
+   const modal = document.getElementById("termsModal");
+   const btn = document.getElementById("termsButton");
+   const closeBtn = document.querySelector(".close");
+
+   // Open the modal when the button is clicked
+   btn.addEventListener("click", function() {
+       modal.style.display = "block";
+   });
+
+   // Close the modal when the "X" is clicked
+   closeBtn.addEventListener("click", function() {
+       modal.style.display = "none";
+   });
+
+   // Close the modal if the user clicks outside of the modal content
+   window.addEventListener("click", function(event) {
+       if (event.target === modal) {
+           modal.style.display = "none";
+       }
+   });
+</script>
+       </a>
+   </div>
+</body>
+        
+        <div class="footer-icons">
+            <a href="https://x.com/saliyaseyfu?s=21&t=VTp_6-_RmzwJCp6NlmQg1Q"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/seyfu-saliya-b489a3239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Seyfu-Saliya"><i class="fab fa-github"></i></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

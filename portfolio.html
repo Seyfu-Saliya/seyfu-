@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Seyfu Saliya Awsi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio</h1>
+        <p>Check out my projects!</p>
+    </header>
+
+    <nav>
+        <style>
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100px; /* Adjust as needed */
+            }
+    
+            .logo {
+                /* Basic styling for the logo container */
+                width: 150px; /* Adjust as needed */
+                height: 150px; /* Adjust to match width for a circle or your desired ratio */
+                /* border: 2px solid #333; /* Optional border */ */
+                border-radius: 50%; /* Creates a circular shape if width and height are equal */
+                background-color: #222; /* Dark background for contrast */
+                color: #eee; /* Light text color */
+                font-family: monospace; /* Typical developer font */
+                font-size: 2.5em; /* Adjust text size */
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+                cursor: pointer; /* Indicate it might be interactive */
+                transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+            }
+    
+            .logo:hover {
+                transform: rotate(10deg) scale(1.05); /* Slight rotation and scale on hover */
+            }
+    
+            /* Alternative style using text initials */
+            .logo-text {
+                font-size: 3em;
+                font-weight: bold;
+                letter-spacing: -0.1em;
+            }
+    
+            /* Style for a more abstract, code-like logo */
+            .logo-code {
+                font-size: 2em;
+                line-height: 0.8;
+            }
+    
+            .logo-code span {
+                color: #00ff80; /* Highlight color */
+            }
+    
+            /* Style for a logo with a visual icon (requires including an icon library like Font Awesome) */
+            .logo-icon {
+                font-size: 3em;
+                color: #00bfff; /* Example icon color */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">DS</span> </div>
+    
+            </div>
+    
+        <script>
+            // Optional JavaScript for more dynamic effects
+    
+            const logoElement = document.querySelector('.logo');
+    
+            if (logoElement) {
+                logoElement.addEventListener('click', () => {
+                    alert('Welcome to seifu website🎉 Welcome aboard! Ready to explore, create, and conquer? Let’s make it amazing together! 🚀!'); // Example interaction
+                    logoElement.classList.toggle('active'); // Example toggle class
+                });
+    
+                // Example of a simple dynamic text change on hover (for text-based logos)
+                const logoTextSpan = logoElement.querySelector('.logo-text');
+                if (logoTextSpan) {
+                    const originalText = logoTextSpan.textContent;
+                    logoElement.addEventListener('mouseover', () => {
+                        logoTextSpan.textContent = 'Dev';
+                    });
+                    logoElement.addEventListener('mouseout', () => {
+                        logoTextSpan.textContent = originalText;
+                    });
+                }
+            }
+        </script>
+        <ul class="nav ul" id="navLinks">
+            <li><a href="index.html"  class="btn">Home</a></li>
+            <li><a href="about.html" class="btn">About</a></li>
+            <li><a href="cv.html"class="btn">CV</a></li>
+            <li><a href="contact.html"class="btn">Contact</a></li>
+            <div class="contact-button">
+                <a href="contact.html" class="btn">Contact us →</a>
+            </div>
+        </ul>
+       
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section>
+        <h2>My Projects</h2>
+      
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .project {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center; 
+        }
+        .project-title {
+            margin: 0;
+        }
+        
+        .btn:hover {
+            background-color: rgb(243, 240, 240);
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+            text-align: center; 
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #231919;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .open-modal{
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <!-- Project 1 -->
+    <div class="project">
+        <h3 class="project-title">Project 1: Website For Century Cinema</h3>
+        <p class="project-description"> showcase the capabilities of a web based system, including movie management, ticket booking, showtime scheduling, and customer management.</p>
+        <button class="btn open-modal">More Info</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Project 1: Website For Century Cinema - Details</h4>
+            <p>This is a more detailed description of the Website For Century Cinema. It includes features, development process, and technologies used.</p>
+            <ul>
+                <li>Platform: visual studio code</li>
+                <li>Technologies: HTML, CSS, JavaScript, php</li>
+                <li>Features: User Sign-Up, product catalog, showtime scheduling, ticket booking</li>
+                <li> Check out my project on GitHub: 
+                    <a href="https://github.com/Seyfu-Saliya/-Website-For-Century-Cinema" target="_blank">
+                        GitHub Repository
+                    </a>
+                </li><br>
+                <img src="image/Screenshot%202025-04-02%20072914.png" alt="Website Screenshot" width="500" height="250">
+
+            </ul>
+        </div>
+    </div>
+   
+    <script>
+        
+        // Get the modal and the button that opens the modal
+        const modal = document.getElementById("modal1");
+        const btn = document.querySelector(".open-modal");
+        const closeBtn = document.querySelector(".close");
+        
+         // Center the button using JavaScript
+         btn.style.position = "absolute";
+        btn.style.top = "63";
+        btn.style.left = "50%";
+        btn.style.transform = "translate(-50%, -50%)";
+
+         // Open modal
+         btn.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modal.style.opacity = 0;
+            modal.style.transition = "opacity 0.5s ease";
+
+            setTimeout(function() {
+                modal.style.opacity = 1;
+            }, 10);
+        });
+
+        // When the user clicks the "More Info" button, open the modal
+btn.addEventListener("click", function() {
+    modal.style.display = "flex";   // Make the modal visible
+    modal.style.opacity = 0;        // Initially set opacity to 0 for fade-in effect
+    modal.style.transition = "opacity 0.5s ease";  // Add a transition for smooth fade-in
+
+    // Allow the modal to fade in by changing its opacity
+    setTimeout(function() {
+        modal.style.opacity = 1;   // Change opacity to 1 to show the modal
+    }, 10);  // The timeout ensures the transition occurs after the modal is shown
+});
+
+    
+
+        
+
+        // When the user clicks on the close button, close the modal
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Project Toggle Example</title>
+            <style>
+                .project {
+                    cursor: pointer;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                }
+                .project:hover {
+                    background-color: #281616;
+                }
+                #projectDetails {
+                    margin-top: 10px;
+                    padding: 10px;
+                    border: 1px solid #131614;
+                    border-radius: 5px;
+                    background-color: #1a1010;
+                }
+            </style>
+        </div>
+        <body>
+        
+        <!-- Modal Structure -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <h2>Project 1: Unity University Registration Mobile App</h2>
+                <p>Details about the project...</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Toggle Example</title>
+    <style>
+        .project {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .project:hover {
+            background-color: #281616;
+        }
+        #projectDetails {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #131614;
+            border-radius: 5px;
+            background-color: #1a1010;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project" onclick="toggleDetails()">
+        <h3>Project 2: Addis Wonderer Mobile App</h3>
+        <p>A mobile app for Addis Ababa city to tourism purpose, built with Android-studio and Mysql.</p>
+    </div>
+
+    <!-- Hidden project details -->
+    <div id="projectDetails" style="display: none;">
+        <h4>Project Details</h4>
+        <p>This is a more detailed description of the Addis Wonderer Mobile App project. It includes features, development process, and technologies used.</p>
+        <ul>
+            <li>Platform: Android only</li>
+            <li>Technologies: Kotlin, IDE: Android-studio, Java, Mysql, Figma</li>
+            <li>Features: User Sign-Up, Mobile App Access, Intractive map, Notifications and Alerts,  Tourist Guides & Information, Restaurant & Dining Recommendations </li>
+            <li>Explore the vibrant heart of Ethiopia with the Addis Ababa Tourism App – your guide to the best of Addis! Whether you're a first-time visitor or a local adventurer, this app offers curated itineraries, real-time event updates, interactive maps, and insider tips to help you experience the city like never before. From historical landmarks to local markets, cultural hotspots, and hidden gems, the Addis Ababa Tourism App ensures you discover all that this dynamic city has to offer. Download now and embark on your unforgettable Addis adventure!"</li>
+            <br>
+            <li> Check out this project on GitHub: 
+                <a href="https://github.com/Seyfu-Saliya/Mobile-apk" target="_blank">
+                    GitHub Repository
+                </a>
+            </li><br>
+            <img src="image/photo_2025-03-20_23-41-53.jpg" alt="mobile app Screenshot" width="400" height="650">
+
+        </ul>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("projectDetails");
+            if (details.style.display === "none") {
+                details.style.display = "block"; // Show the details
+            } else {
+                details.style.display = "none"; // Hide the details
+            }
+        }
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .project {
+                cursor: pointer;
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+            }
+            .project:hover {
+                background-color: #271d1d;
+            }
+            .project-details {
+                display: none;
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #201212;
+            }
+        </style>
+    </head>
+    <body>
+    
+    
+        <!-- Project 1 -->
+        <div class="project">
+            <h3>Project 3: Face Detector AI </h3>
+            <p>A Face Detector AI, Creating a face detector AI in MATLAB typically involves using pre-trained models, such as the ones in the Computer Vision Toolbox, to detect faces in images or video frames.</p>
+            <div class="project-details">
+                <h4>Project Details</h4>
+                <p>  <ul>
+                    <li> Developed a face detection application using MATLAB’s Computer Vision Toolbox.</li><br>
+                    <li><strong>Key Features:</strong>
+                        <ul>
+                            <li>Utilized <code>vision.CascadeObjectDetector</code> for face detection.</li>
+                            <li>Implemented real-time face detection in video streams (e.g., webcam or video file).</li>
+                            <li>Displayed detected faces with bounding boxes for visualization.</li>
+                            
+                        </ul>
+                    </li><br>
+                    <li><strong>Technologies Used:</strong>
+                        <ul>
+                            <li>MATLAB</li>
+                            <li>Computer Vision Toolbox</li>
+                        </ul>
+                    </li>
+                    <br>
+            <li> Check out this project on GitHub: 
+                <a href="https://github.com/Seyfu-Saliya/Face-detector" target="_blank">
+                    GitHub Repository
+                </a>
+            </li>
+                </ul></p>
+            </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>Project 4: Hospital management system (Interactive Website)</h3>
+            <p>A web platform for Hospital management system, built with Html, CSS, JavaScript, Mysql.</p>
+            <div class="project-details">
+                <title>Hospital Management System - Project Description</title>
+    <style>
+        
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(33, 10, 10);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: hsl(0, 0%, 100%);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 8px 0;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        li strong {
+            color: #007BFF;
+        }
+
+        .features, .technologies, .outcome {
+            margin-bottom: 30px;
+        }
+
+        .features ul, .technologies ul {
+            margin-left: 20px;
+        }
+
+        .outcome p {
+            font-size: 12px;
+            color: #555;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hospital Management System (Interactive Website)</h1>
+
+    <div class="description">
+        <h2>Description:</h2>
+        <p>Developed an interactive and user-friendly Hospital Management System website aimed at efficiently managing various hospital operations. The system allows hospital staff (doctors, nurses, and admins) and patients to interact seamlessly for scheduling, managing appointments, patient records, and billing. The website provides an intuitive interface for both users and administrators, improving overall hospital management and patient care.</p>
+    </div>
+
+    <div class="features">
+        <h2>Key Features:</h2>
+        <ul>
+            <li><strong>Patient Management:</strong> Allows patients to register, book appointments, view medical records, and manage their profile.</li>
+            <li><strong>Doctor and Staff Management:</strong> Enables doctors to manage their schedules, view patient histories, and update treatment records.</li>
+            <li><strong>Appointment Scheduling:</strong> Patients can book, reschedule, or cancel appointments. Doctors can manage their availability and appointments.</li> 
+            <li><strong>Admin Dashboard:</strong> Hospital administrators can manage patient data, staff records, appointments, and generate reports for hospital analytics.</li>
+            <li><strong>Real-Time Notifications:</strong> Patients and doctors receive real-time alerts regarding appointment confirmations, cancellations, or any updates.</li>
+        </ul>
+    </div>
+
+    <div class="technologies">
+        <h2>Technologies Used:</h2>
+        <ul>
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Backend:</strong> PHP</li>
+            <li><strong>Database:</strong> MySQL</li>
+        </ul>
+    </div>
+
+    <div class="outcome">
+        <h2>Outcome:</h2>
+        <p>Successfully delivered an interactive and highly functional website that streamlines hospital operations, improves the patient experience, and facilitates seamless interaction between patients and healthcare providers. The website also helps hospital administrators make data-driven decisions by providing detailed reports and analytics.</p>
+    </div>
+</div>
+<li> Check out this project on GitHub: 
+    <a href="https://github.com/Seyfu-Saliya/hospital-mgt-system" target="_blank">
+        GitHub Repository
+    </a>
+</li>
+            </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="project">
+            <h3>Project 5: Online Property tax payment system (/Addis paytax/ web based mobile application)</h3>
+            <h4>Our Final Project</h4>
+            <p>An Online Property tax payment system, built using Flatter and Mysql.</p>
+            <div class="project-details">
+                <style>
+                    
+            
+                   
+            
+                    .container {
+                        width: 80%;
+                        margin: 30px auto;
+                        padding: 20px;
+                        background-color: rgb(33, 10, 10);
+                        border-radius: 8px;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    h2 {
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+            
+                    p {
+                        font-size: 18px;
+                        line-height: 1.6;
+                        margin-bottom: 15px;
+                    }
+            
+                    .upload-section {
+                        margin-bottom: 30px;
+                    }
+            
+                    .upload-section input[type="file"] {
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+            
+                    .upload-section button {
+                        background-color: #2e190f;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+            
+                    .upload-section button:hover {
+                        background-color: #45a049;
+                    }
+            
+                    .download-section {
+                        margin-top: 20px;
+                    }
+            
+                    .download-section a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: #333;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                    }
+            
+                    .download-section a:hover {
+                        background-color: #4CAF50;
+                    }
+            
+                    
+                </style>
+            </head>
+            <body>
+            
+            <header>
+                Property Tax Payment System
+            </header>
+            
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features">
+                    <ul>
+                        <li><strong>Tax Calculation:</strong> Automatically calculates property taxes based on the property value and tax rate.</li>
+                        <li><strong>Payment Gateway:</strong> Users can pay taxes online through secure payment methods by using chapa.</li>
+                        <li><strong>Property Management:</strong> Users can view and update their property details, including ownership and location.</li>
+                        <li><strong>Tax History:</strong> Users can access their previous tax payment history.</li>
+                        <li><strong>Admin Dashboard:</strong> Admins can manage property records, tax rates, and user payments.</li>
+                    </ul>
+                </div>
+                <h2>Technologies Used</h2>
+                <div class="technologies">
+                    <ul>
+                        <li><strong>Frontend:</strong> Flutter, </li>
+                        <li><strong>UI/UX Design:</strong> Figma</li>
+                        <li><strong>Database:</strong> MySQL for storing user and property data</li>
+                        <li><strong>Payment Gateway Integration:</strong> chapa Stripe API</li>
+                    </ul>
+                </div>
+                <br>
+                <img src="image/Screenshot%202025-03-21%20183546.png" alt="Website Screenshot" width="400" height="500">
+                <img src="image/Screenshot%202025-03-21%20183914.png" alt="Website Screenshot" width="400" height="500">
+
+            
+                
+            
+                <!-- File Download Section -->
+                <div class="download-section">
+                    <h3>Download Property Tax Document</h3><br>
+                    <a href="image/ONLINE%20PROPERTY%20TAX%20PAYMENT%20SYSTEM%20CHAPTER%201%20v3.pdf" id="downloadLink" download="image/ONLINE%20PROPERTY%20TAX%20PAYMENT%20SYSTEM%20CHAPTER%201%20v3.pdf">Download Tax Document</a>
+                </div>
+            
+            </div>
+            
+            
+            
+            <script>
+                // Simulate file upload behavior (without actual backend)
+                function uploadFile() {
+                    const fileInput = document.getElementById("fileUpload");
+                    const file = fileInput.files[0];
+                    
+                    if (file) {
+                        alert("Document uploaded successfully: " + file.name);
+                    } else {
+                        alert("Please select a file to upload.");
+                    }
+                }
+            </script>
+            </div>
+        </div>
+    
+        <script>
+            // Get all project divs
+            const projects = document.querySelectorAll('.project');
+    
+            // Loop through each project and add a click event listener
+            projects.forEach((project) => {
+                project.addEventListener('click', function() {
+                    // Toggle visibility of the project details inside this specific project
+                    const details = project.querySelector('.project-details');
+                    if (details.style.display === "none" || details.style.display === "") {
+                        details.style.display = "block"; // Show details
+                    } else {
+                        details.style.display = "none"; // Hide details
+                    }
+                });
+            });
+        </script>
+        
+    
+    </body>
+    </html>
+    
+
+</body>
+</html>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Seyfu Saliya Awsi</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+        
+        <div class="footer-icons">
+            <a href="https://x.com/saliyaseyfu?s=21&t=VTp_6-_RmzwJCp6NlmQg1Q"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/seyfu-saliya-b489a3239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Seyfu-Saliya"><i class="fab fa-github"></i></a>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
